@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 33
+    namespace "com.light.messenger"
+
+    defaultConfig {
+        applicationId "com.light.messenger"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.8.11.25"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
